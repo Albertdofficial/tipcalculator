@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main class="container main">
+      <form class="form">
+        <div class="left-container">
+          <div class="bill-amount">
+            <label for="input-amount" class="bill-label">Bill</label> <br />
+
+            <input
+              type="text"
+              class="input-amount"
+              id="input-amount"
+              placeholder="$                                               0"
+            />
+          </div>
+        </form>
+          <section class="section">
+            <h3>Select Tip %</h3>
+            <div class="tip-percents">
+              <button class="tip">5%</button>
+              <button class="tip">10%</button>
+              <button class="tip">15%</button>
+              <button class="tip">25%</button>
+              <button class="tip">50%</button>
+              <form class="form">
+                <input type="text" class="custom-input" placeholder="custom" />
+              </form>
+            </div>
+          </section>
+        <form class="form">
+          <div class="num-of-people">
+            <label for="people-input">Number of people</label>
+            <input
+              type="text"
+              id="people-input"
+              class="people-input"
+              placeholder="🧑                                            0"
+            />
+          </div>
+        </form>
+        
+        </div>
+
+      <div class="right-container">
+        <div class="tip-display">
+          <p class="tip-amount-text">Tip Amount</p>
+          <p class="tip-amount">$0.00</p>
+          <br>
+          <span class="person">/person</span>
+        </div>
+
+        <div class="total-display">
+          <p class="total-text">Total</p>
+          <p class="total-amount">$0.00</p>
+          <br>
+          <span class="person">/person</span>
+        </div>
+
+        <button class="reset">RESET</button>
+      </div>
+    </main>
+    <h4>Enter the bill, tip% and number of people above respectively, then press the enter key</h4>
+
+    <footer class="footer">Developed by Albert D. Bangura</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
